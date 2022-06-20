@@ -1,13 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import { Fragment } from 'react';
 function App() {
   return (
    <div className='Formulario'>
     
-     <h1>Registrarse</h1>
-    <label>Nombre:</label>
-    <input id="nombre" name="nombre" value={nombre}></input>
+    <Fragment>
+                <h1>Registrarse</h1>
+                <form>
+                    <input
+                    name="titulo"
+                    className="Formulario"
+                    
+                    />
+                <button className='btn-primerary'>Enviar</button>
+                </form>
+            </Fragment>
+        
+    
    </div>
         
       
