@@ -1,3 +1,4 @@
+import '../src/App'
 import React, {Fragment} from 'react'
 import { useForm } from 'react-hook-form'
 
