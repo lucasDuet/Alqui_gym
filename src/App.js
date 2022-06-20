@@ -5,7 +5,7 @@ function App() {
   return (
    <div className='Formulario'>
     
-     <h1></h1>
+     <h1>Registrarse</h1>
     <label>Nombre:</label>
     <input id="nombre" name="nombre" value={nombre}></input>
    </div>
@@ -15,3 +15,4 @@ function App() {
 }
 
 export default App;
+ 
