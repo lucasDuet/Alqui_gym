@@ -19,18 +19,18 @@ const FormValidation = () => {
         <h2>Form Validation</h2>
         <form onSubmit={ handleSubmit(customSubmit) } className='form-react'>
             <div className='form-control'>
-                <label>Name</label>
+                <label>Nombre</label>
                 <input type="text" {...register('name',{ 
                     required:true,
-                    maxLength:5
+                    maxLength:10
                 })} />
                 {errors.name?.type === 'required' && <small className='fail'>El campo no puede estar vacío</small>}
-                {errors.name?.type === 'maxLength' && <small className='fail'>El máximo de caracteres es 5</small>}
+                {errors.name?.type === 'maxLength' && <small className='fail'>El máximo de caracteres es 10</small>}
             </div>
             
             <div className='form-control'>
-                <label>Country</label>
-                <input type="text" {...register('country', {
+                <label>Provincia</label>
+                <input type="text" {...register('provincia', {
                     required: {
                         value:true,
                         message:"Custom Message: Ingrese los datos"
@@ -41,7 +41,7 @@ const FormValidation = () => {
              <div className='form-control'>
                  <input {...register('prueba')} style={{ backgroundColor:colorInput }} />
              </div>   
-            <button type='submit'>Send</button>
+            <button type='submit'>Enviar</button>
         </form>
     </>
   )

@@ -8,21 +8,26 @@ const FormBasic = () => {
   }
   return (
     <>
-        <h2>Form Basic</h2>
+        <h2>Login</h2>
         <form onSubmit={ handleSubmit(customSubmit) } className='form-react'>
             <div className='form-control'>
                 <label>Name</label>
                 <input type="text" {...register('name')} />
             </div>
             <div className='form-control'>
-                <label>Age</label>
-                <input type="number" {...register('age')} />
+                <label>Numero de telefono</label>
+                <input type="number" {...register('tell')} />
             </div>
             <div className='form-control'>
-                <label>Country</label>
-                <input type="text" {...register('country')} />
+                <label>Provincia</label>
+                <input type="text" {...register('provincia')} />
             </div>
-            <button type='submit'>Send</button>
+            <div className='textotarea'>
+               <label>Actividad que se quiere hacen en el Sum:
+                <textarea value={this.state.value} onChange={this.handleSubmit}></textarea>
+                </label>
+            </div>
+            <button type='submit'>Enviar</button>
         </form>
     </>
   )
