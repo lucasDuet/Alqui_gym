@@ -3,9 +3,11 @@ import './App.css';
 function App() {
   return (
    <div className='Formulario'>
-   </div>
-        
+    <formularios/>
+
       
+   </div>
+     
   );
 }
 
